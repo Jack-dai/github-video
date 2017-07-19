@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="styles/videoPlayer.css"/>
+</head>
+<body>
+<div id="main">
+    <div id="custom-video">
+        <video id="myvideo" preload poster="imges/poster.jpg">
+        <source src="medias/oceans.mp4"/>
+        </video>
+    </div>
+    <div id="video-controls">
+        <div id="video-progress">
+            <div id="buffer-progress"></div>
+            <div id="played-progress"></div>
+            <div id="progress-bar"></div>
+        </div>
+        <div id="video-ctrlpan">
+            <a class="ctrlpan-play"></a>
+            <a class="ctrlpan-stop"></a>
+            <a class="ctrlpan-quick"></a>
+            <a class="ctrlpan-slow"></a>
+            <span class="ctrlpan-time">
+                <span class="current-time">00:00</span><span>/</span><span class="oDura-time">00:00</span>
+            </span>
+            <a class="ctrlpan-full"></a>
+            <div class="ctrlpan-volume-progress">
+                <div class="volumed-progress"></div>
+                <div class="volume-bar"></div>
+            </div>
+            <a class="ctrlpan-volume"></a>
+        </div>
+    </div>
+</div>
+<script src="scripts/jquery-3.1.1.min.js"></script>
+<script src="scripts/videoPlayer.js"></script>
+</body>
+</html>

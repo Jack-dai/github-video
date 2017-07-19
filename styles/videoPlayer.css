@@ -1,0 +1,186 @@
+
+html,body{
+    margin: 0;
+    padding: 0;
+}
+#main{
+    width: 960px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: black;
+    position: relative;
+}
+#custom-video{
+    width: 100%;
+    margin: 0 auto;
+}
+#video-controls{
+    width: 100%;
+    height: 50px;
+    margin: 0 auto;
+    position: absolute;
+    left: 0;
+    z-index: 2147483648;
+}
+#myvideo{
+    width: 100%;
+    height: 100%;
+}
+/*全屏显示控制播放部分*/
+.full-screen{
+    position: absolute;
+    bottom: 0;
+}
+#video-progress{
+    width: 100%;
+    height: 7px;
+    background-color: #2c2c2c;
+}
+#buffer-progress,#played-progress{
+    width: 0;
+    height: 7px;
+    position: absolute;
+    left: 0;
+    background-color: #606060;
+}
+#played-progress{
+    background-color: #056e9f;
+}
+#progress-bar{
+    width: 22px;
+    height: 11px;
+    position: absolute;
+    left: -3px;
+    top: -2px;
+    background: url("../imges/playerSprite2.png") no-repeat -404px 0;
+}
+#video-ctrlpan{
+    width: 100%;
+    height: 43px;
+    background-color: #131313;
+}
+/*控制播放*/
+.ctrlpan-play{
+    width: 35px;
+    height: 33px;
+    background: url("../imges/playerSprite.png") no-repeat -514px  0;
+    position: absolute;
+    left: 5px;
+    top: 12px;
+    border: 0;
+}
+.ctrlpan-play:hover{
+    background: url("../imges/playerSprite.png") no-repeat -570px  0;
+}
+/*点击播放按钮*/
+.ctrlpan-playclass{
+    width: 35px;
+    height: 33px;
+    background: url("../imges/playerSprite.png") no-repeat -220px  0;
+}
+.ctrlpan-playclass:hover{
+    background: url("../imges/playerSprite.png") no-repeat -276px  0;
+}
+/*控制暂停*/
+.ctrlpan-stop{
+    width: 35px;
+    height: 33px;
+    background: url("../imges/playerSprite.png") no-repeat -332px  0;
+    position: absolute;
+    left: 50px;
+    top: 12px;
+    border: 0;
+}
+.ctrlpan-stop:hover{
+    background: url("../imges/playerSprite.png") no-repeat -387px  0;
+}
+/*快放*/
+.ctrlpan-quick{
+    width: 35px;
+    height: 33px;
+    background: url("../imges/playerSprite2.png") no-repeat -149px  0;
+    position: absolute;
+    left: 95px;
+    top: 12px;
+    border: 0;
+}
+.ctrlpan-quick:hover{
+    background: url("../imges/playerSprite2.png") no-repeat -234px  0;
+}
+/*慢放*/
+.ctrlpan-slow{
+    width: 35px;
+    height: 33px;
+    background: url("../imges/playerSprite2.png") no-repeat -62px  0;
+    position: absolute;
+    left: 140px;
+    top: 12px;
+    border: 0;
+}
+.ctrlpan-slow:hover{
+    background: url("../imges/playerSprite2.png") no-repeat -319px  0;
+}
+/*时间*/
+.ctrlpan-time{
+    position: absolute;
+    left: 210px;
+    top: 18px;
+    color: #888888;
+}
+/*全屏*/
+.ctrlpan-full{
+    width: 40px;
+    height: 33px;
+    background: url("../imges/playerSprite.png") no-repeat -701px  0;
+    position: absolute;
+    right: 5px;
+    top: 12px;
+    border: 0;
+}
+.ctrlpan-full:hover{
+    background: url("../imges/playerSprite.png") no-repeat -761px  0;
+}
+/*音量进度条*/
+.ctrlpan-volume-progress{
+    width: 80px;
+    height: 6px;
+    background-color: #606060;
+    position: absolute;
+    right: 60px;
+    top: 25px;
+}
+.volumed-progress{
+    width: 0;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    background-color: #056e9f;
+}
+.volume-bar{
+    width: 14px;
+    height: 12px;
+    position: absolute;
+    left: -3px;
+    top: -2px;
+    background: url("../imges/playerSprite2.png") no-repeat;
+}
+/*静音*/
+.ctrlpan-volume{
+    width: 35px;
+    height: 33px;
+    background: url("../imges/playerSprite.png") no-repeat;
+    position: absolute;
+    right: 145px;
+    top: 12px;
+    border: 0;
+}
+.ctrlpan-volume:hover{
+    background: url("../imges/playerSprite.png") no-repeat -55px 0;
+}
+/*点击静音按钮*/
+.ctrlpan-volumeclass{
+    background: url("../imges/playerSprite.png") no-repeat -110px 0;
+}
+.ctrlpan-volumeclass:hover{
+    background: url("../imges/playerSprite.png") no-repeat -165px 0;
+}
